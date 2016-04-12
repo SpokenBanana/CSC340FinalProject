@@ -1,0 +1,84 @@
+package AssetManagers;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+/**
+    This class make it easier to implement animations. When given an image file with frames,
+    the amount of frame, and the desired speed of the animation, it will display the animation for you.
+ */
+public class Animation {
+
+    protected BufferedImage animationImage;
+    // the bounds of the current frame we want to draw
+    private Rectangle sourceRectangle;
+    private int time, speed;
+    private boolean still;
+
+    // 0 down   1 left  2 right  3 up
+    public Animation(String filePath, int frames, int speedInMilliseconds) {
+        try {
+            animationImage = ImageIO.read(new File("assets/" + filePath));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        sourceRectangle = new Rectangle(0,0, animationImage.getWidth() / frames, animationImage.getHeight());
+        still = false;
+        // our game runs in 60 frames per second, so this converts the speedInMilliseconds into a time the game can read
+        speed = speedInMilliseconds / (1000/60);
+    }
+
+
+    public Animation(String filePath, int frames, int speedInMilliseconds, int height) {
+        this(filePath, frames, speedInMilliseconds);
+        sourceRectangle.height = height;
+    }
+
+    public void setStill(boolean s) {
+        still = s;
+    }
+
+    /**
+     * Only applies to the spritesheets of the "humans", each row specifies a certain animation
+     * @param row the row of the animation
+     */
+    public void setRow(int row) {
+        sourceRectangle.y = row * 32;
+    }
+
+    /**
+        moves the rectangle to the next frame we want to draw
+     */
+    private void moveFrame() {
+        // each frame is the same width, so to move to the next frame, just add the width to current x
+        // the % animationImage.getWidth() is necessary to move the x position back to 0 when it reaches the end of the
+        // image
+        if (time++ % speed == 0)
+            sourceRectangle.x = (sourceRectangle.x + sourceRectangle.width) % animationImage.getWidth();
+
+    }
+    public void draw(Graphics2D g, Rectangle bounds) {
+        moveFrame();
+        if (still) {
+            g.drawImage(animationImage, bounds.x, bounds.y, bounds.x + bounds.width, bounds.y + bounds.height,
+                    32, sourceRectangle.y, 32 + sourceRectangle.width, sourceRectangle.y + sourceRectangle.height, null);
+        }
+        else
+            g.drawImage(animationImage, bounds.x, bounds.y, bounds.x + bounds.width, bounds.y + bounds.height,
+                sourceRectangle.x, sourceRectangle.y, sourceRectangle.x + sourceRectangle.width, sourceRectangle.y + sourceRectangle.height, null);
+    }
+
+    /**
+     * This draws the animation with some color in the background
+     * @param g the brush to color with
+     * @param bounds the location to draw the animation
+     * @param color the color to fill all the empty color at
+     */
+    public void draw(Graphics2D g, Rectangle bounds, Color color) {
+        moveFrame();
+        g.drawImage(animationImage, bounds.x, bounds.y, bounds.x + bounds.width, bounds.y + bounds.height,
+                sourceRectangle.x, sourceRectangle.y, sourceRectangle.x + sourceRectangle.width, sourceRectangle.y + sourceRectangle.height,color, null);
+    }
+}
