@@ -1,6 +1,12 @@
 # CSC340FinalProject
 Final project for CSC 340 (software engineering)
 
+# Important!!!
+
+Remember that the engine is still being added and worked on, so do a pull request frequently.
+Do one before you start writing code, do one before you make a commmit, and before you push.
+Always!
+
 # Adding a new Hero
 
 * Create a new class in Entities/Hero 
