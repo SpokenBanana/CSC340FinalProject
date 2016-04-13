@@ -3060,7 +3060,10 @@
   <object x="1184" y="448" width="32" height="32"/>
   <object x="1184" y="352" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Player Spawn">
+ <objectgroup name="Player spawn">
   <object x="32" y="320" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="End of Level">
+  <object name="Maze001" x="1280" y="320" width="32" height="96"/>
  </objectgroup>
 </map>

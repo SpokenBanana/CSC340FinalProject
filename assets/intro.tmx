@@ -3027,7 +3027,7 @@
  <objectgroup name="Player spawn">
   <object x="32" y="32" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Level end">
-  <object x="1280" y="320" width="32" height="128"/>
+ <objectgroup name="End of Level">
+  <object name="icelevel" x="1280" y="320" width="32" height="128"/>
  </objectgroup>
 </map>

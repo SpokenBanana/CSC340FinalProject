@@ -6,6 +6,7 @@ import Entities.Block;
 import Entities.Enemies.Enemy;
 import Entities.Enemies.Handy;
 import Entities.Hero;
+import Entities.LevelChanger;
 import Entities.MapEntity;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 
 public class MapState extends GameState {
     protected ArrayList<MapEntity> blocks;
+    protected LevelChanger changer;
     protected ArrayList<Enemy> enemies;
     protected ArrayList<Rectangle> slidingRegions;
     protected  Map map;
@@ -31,6 +33,7 @@ public class MapState extends GameState {
         enemies = new ArrayList<>();
         extractBlocks();
         getSliding();
+        getEnd();
     }
 
     public MapState(GameStateManager manager, String level) {
@@ -41,6 +44,7 @@ public class MapState extends GameState {
         enemies = new ArrayList<>();
         extractBlocks();
         getSliding();
+        getEnd();
     }
     final boolean[] slide = {false};
 
@@ -54,9 +58,10 @@ public class MapState extends GameState {
         map = new Map(level);
         blocks = new ArrayList<>();
         extractBlocks();
-        getSliding();
         getSpawn();
+        getSliding();
         spawnEnemies();
+        getEnd();
     }
 
     @Override
@@ -77,15 +82,19 @@ public class MapState extends GameState {
             b.update();
             return b.isDead();
         });
+
+        if (changer.didCross(player)) {
+            changeLevel(changer.level);
+        }
     }
 
     @Override
     public void draw(Graphics2D g) {
-        map.draw(g, 0);
-        map.draw(g, 1);
+        map.drawRest(g, 0);
         blocks.forEach(b -> b.draw(g));
     }
     private void extractBlocks() {
+        blocks = new ArrayList<>();
         // I named the objects I want as walls "walls" in the JSON files.
         NodeList wallObjects = map.getObject("walls");
 
@@ -156,6 +165,13 @@ public class MapState extends GameState {
             Element slide = (Element) sliders.item(i);
             slidingRegions.add(convertElementToRectangle(slide));
         }
+    }
+
+    public void getEnd() {
+        NodeList enders = map.getObject("End of Level");
+        if (enders == null) return;
+        Element ender = (Element) enders.item(0);
+        changer = new LevelChanger(convertElementToRectangle(ender), ender.getAttribute("name"));
     }
 
     private Rectangle convertElementToRectangle(Element toRectangle) {

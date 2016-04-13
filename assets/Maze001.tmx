@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="PathAndObjects" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/PathAndObjects.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="40" height="25">
+  <data>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="148"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="83"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="178"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="178"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="178"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="178"/>
+   <tile gid="81"/>
+   <tile gid="146"/>
+   <tile gid="145"/>
+   <tile gid="83"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="178"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="146"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="145"/>
+   <tile gid="146"/>
+   <tile gid="129"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="178"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="83"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="81"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="98"/>
+   <tile gid="98"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="129"/>
+   <tile gid="130"/>
+   <tile gid="129"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="130"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="145"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="82"/>
+   <tile gid="146"/>
+   <tile gid="99"/>
+   <tile gid="97"/>
+   <tile gid="99"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+   <tile gid="113"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="114"/>
+   <tile gid="115"/>
+  </data>
+ </layer>
+ <objectgroup name="Walls">
+  <object name="walls" x="64" y="-25" width="1216" height="32">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1280" y="0" width="18.6667" height="790.667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="64" y="800" width="1216" height="18.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="57.67" y="721.333" width="15" height="80">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="122" y="724" width="589" height="28">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="2.66667" y="660" width="710" height="22">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="-7.33" y="690.667" width="16" height="110.667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="-22" y="0" width="32" height="672">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="4" y="310" width="76" height="20">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="122" y="306.667" width="264" height="27.33">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="370.667" y="336" width="15" height="62.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="59.33" y="374.667" width="265.33" height="18">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="310.33" y="376" width="19" height="181.333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="118" y="533.33" width="205.67" height="22">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="122" y="436" width="15" height="97.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="142.667" y="442.667" width="62.6667" height="24">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="183.67" y="439.67" width="22.67" height="51.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="144" y="437.333" width="41.3333" height="9.33333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="247.67" y="438" width="17" height="53.33">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="57" y="393.333" width="15.67" height="221.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="71" y="597" width="251.33" height="20.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="378" y="449.33" width="21.67" height="164.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="398.667" y="528" width="32" height="55">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="433.333" y="505" width="25" height="55">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="440" y="630.67" width="54.6667" height="37.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="466.667" y="605" width="29.3333" height="32">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="434" y="311.67" width="26" height="142">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="501.333" y="314" width="15" height="245">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="528" y="530.667" width="96" height="28">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="532" y="536" width="30.6667" height="80">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="560" y="594.667" width="65.3333" height="22">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="626.667" y="180" width="25" height="435">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="56" y="245.333" width="533.33" height="22">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="565.333" y="273.333" width="25.3333" height="221.333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="116" y="115" width="29.3333" height="90">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="55.33" y="177.333" width="86.6667" height="29.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="50.6667" y="49.3333" width="29.3333" height="96">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="73.3333" y="49.67" width="70.6667" height="23">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="182.667" y="60" width="22" height="148">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="186.667" y="50.6667" width="1046.67" height="25">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="244" y="116" width="918.67" height="25">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="192" y="180" width="445.333" height="25">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="697.33" y="152" width="15" height="505.333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="758.667" y="192" width="22" height="593.333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="760" y="184" width="342.667" height="21">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="820" y="250" width="221.333" height="16">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="821.333" y="269.333" width="29.3333" height="100">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="845.333" y="333.333" width="63.33" height="33.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="885.333" y="270.667" width="22.67" height="81.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1014" y="270.667" width="26" height="194.667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1074.67" y="241.333" width="28" height="284">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1016.33" y="499.33" width="120.67" height="24.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1086.67" y="475" width="50" height="34.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1138.67" y="140" width="25" height="288">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1208" y="82.6667" width="20.33" height="505">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="956" y="310" width="12" height="280">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="982.667" y="562.667" width="232" height="25">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1175.67" y="477.67" width="30.6667" height="104">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1008" y="596" width="28.33" height="154.667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="785.333" y="408" width="59.33" height="26.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="818.667" y="433.333" width="25" height="316.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="852" y="725" width="161.333" height="25">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="882.667" y="410" width="25" height="271">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="917.333" y="661.333" width="56" height="20.67">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="950" y="630" width="23" height="45.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1077.33" y="628" width="149" height="30.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1198.67" y="629.333" width="27.33" height="121.333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1076.67" y="713.333" width="140" height="37.3333">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+  <object name="walls" x="1078" y="638.667" width="25" height="94.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Player spawn">
+  <object name="Player Spawn" x="18.6667" y="1.33333" width="30.6667" height="36"/>
+ </objectgroup>
+ <objectgroup name="End of Level">
+  <object name="Maze002" x="14.6667" y="793.333" width="45.3333" height="30.6667">
+   <properties>
+    <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -27,7 +27,7 @@ public class Button extends Rectangle {
         sounds = new SoundManager();
         sounds.addSound("hover", "hover.wav");
         try {
-            backgroundSprite = ImageIO.read(new File("Assets/UI/button.png"));
+            backgroundSprite = ImageIO.read(new File("assets/uibutton.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,6 +53,8 @@ public class Button extends Rectangle {
 
     public void draw(Graphics2D g) {
         final int CHARACTER_WIDTH = 7;
+
+        setHovered(Game.mouseInput.isMouseOver(this));
 
         g.setFont(buttonFont);
         if (isHovered)

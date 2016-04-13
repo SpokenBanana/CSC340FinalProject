@@ -15,7 +15,7 @@ public class SomeLevel extends MapState {
         launcher.startGame(new SomeLevel(launcher.getManager()));
     }
     public SomeLevel(GameStateManager manger) {
-        super(manger, "Maze002");
+        super(manger, "intro");
         player = new Wizard();
         sound.playSound("main");
         getSpawn();
