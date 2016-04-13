@@ -12,7 +12,7 @@ public class Sound {
     private Clip clip;
     public Sound(String sound) {
        try{
-            inputStream = AudioSystem.getAudioInputStream(new File("Assets/Sounds/" + sound));
+            inputStream = AudioSystem.getAudioInputStream(new File("assets/" + sound));
             clip = AudioSystem.getClip();
             clip.open(inputStream);
 

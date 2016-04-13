@@ -1,5 +1,6 @@
 package GameStates.TestStates;
 
+import AssetManagers.Sound;
 import Entities.Hero;
 import Entities.Heroes.Wizard;
 import GameStates.GameStateManager;
@@ -14,8 +15,9 @@ public class SomeLevel extends MapState {
         launcher.startGame(new SomeLevel(launcher.getManager()));
     }
     public SomeLevel(GameStateManager manger) {
-        super(manger, "icelevel");
+        super(manger, "Maze002");
         player = new Wizard();
+        sound.playSound("main");
         getSpawn();
         spawnEnemies();
     }
