@@ -28,6 +28,10 @@ public class Block extends Rectangle implements MapEntity {
         }
     }
 
+    public boolean ignore() {
+        return false;
+    }
+
     /**
      * Lets us know if the block is a door or not
      * @return true if is door

@@ -19,7 +19,6 @@ public class Init extends MapState {
         super(manager, "practice");
         hero = new Hero();
         handy = new Handy(hero);
-        rock = new SlidingRock(hero);
         button = new PushButton(hero);
 
         handy.setBlocks(blocks);

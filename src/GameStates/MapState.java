@@ -8,11 +8,21 @@ import Entities.Enemies.Handy;
 import Entities.Hero;
 import Entities.LevelChanger;
 import Entities.MapEntity;
+import Entities.Obstacles.SlidingRock;
+import Entities.items.Health;
+import GameStates.GameLevels.MazeLevels;
+import GameStates.Menus.PauseMenu;
+import GameStates.Menus.TitleScreen;
+import GameStates.Menus.WinState;
+import Handlers.Game;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+import org.w3c.dom.events.EventException;
 import org.w3c.dom.html.HTMLAnchorElement;
+import sun.management.snmp.util.SnmpLoadedClassData;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 public class MapState extends GameState {
@@ -23,17 +33,29 @@ public class MapState extends GameState {
     protected  Map map;
     protected SoundManager sound;
     protected Hero player;
+    public boolean hastut;
+    public String tut;
 
     public MapState(GameStateManager manger, String level, Hero player) {
         super(manger);
+
+        hastut = false;
         this.player = player;
         blocks = new ArrayList<>();
+        sound = new SoundManager();
+        sound.addSound("complete", "126421__cabeeno-rossley__level-complete.wav");
+        sound.playSound("complete");
         map = new Map(level);
         sound = new SoundManager();
         enemies = new ArrayList<>();
         extractBlocks();
+        getProps();
+        getSpawn();
         getSliding();
+        spawnEnemies();
         getEnd();
+        getRocks();
+        getItems();
     }
 
     public MapState(GameStateManager manager, String level) {
@@ -41,9 +63,12 @@ public class MapState extends GameState {
         blocks = new ArrayList<>();
         map = new Map(level);
         sound = new SoundManager();
+        sound.addSound("complete", "126421__cabeeno-rossley__level-complete.wav");
+        sound.playSound("complete");
         enemies = new ArrayList<>();
         extractBlocks();
         getSliding();
+        getProps();
         getEnd();
     }
     final boolean[] slide = {false};
@@ -55,17 +80,39 @@ public class MapState extends GameState {
     }
 
     public void changeLevel(String level) {
+        if (level.equals("End")) {
+            parentManager.clear();
+            soundManager.clearAllSounds();
+            parentManager.setGame(new WinState(parentManager));
+            return;
+        }
+        sound.playSound("complete");
+        sound.stopSound("music");
         map = new Map(level);
         blocks = new ArrayList<>();
         extractBlocks();
         getSpawn();
         getSliding();
         spawnEnemies();
+        getProps();
         getEnd();
+        getItems();
+        if (hastut) {
+            parentManager.addGame(new SpeechState(parentManager, this, tut));
+            hastut = false;
+        }
     }
 
     @Override
     public void update() {
+        if (Game.keys.isPressed(KeyEvent.VK_ENTER)) {
+            parentManager.addGame(new PauseMenu(parentManager));
+            return;
+        }
+        if (this.player.getHealth() <= 0) {
+            parentManager.clear();
+            parentManager.setGame(new TitleScreen(parentManager));
+        }
         slide[0] = false;
         slidingRegions.forEach(s -> {
             if (player.getPosition().intersects(s)){
@@ -83,8 +130,19 @@ public class MapState extends GameState {
             return b.isDead();
         });
 
-        if (changer.didCross(player)) {
-            changeLevel(changer.level);
+        if (changer != null && changer.didCross(player)) {
+            if (changer.level.equals("Maze001")) {
+                MazeLevels level = new MazeLevels(parentManager, changer.level, this.player);
+                soundManager.clearAllSounds();
+                parentManager.setGame(level);
+                if (level.hastut) {
+                    parentManager.addGame(new SpeechState(parentManager, level, level.tut));
+                    level.hastut = false;
+                }
+            }
+            else{
+                changeLevel(changer.level);
+            }
         }
     }
 
@@ -93,7 +151,7 @@ public class MapState extends GameState {
         map.drawRest(g, 0);
         blocks.forEach(b -> b.draw(g));
     }
-    private void extractBlocks() {
+    public void extractBlocks() {
         blocks = new ArrayList<>();
         // I named the objects I want as walls "walls" in the JSON files.
         NodeList wallObjects = map.getObject("walls");
@@ -172,6 +230,49 @@ public class MapState extends GameState {
         if (enders == null) return;
         Element ender = (Element) enders.item(0);
         changer = new LevelChanger(convertElementToRectangle(ender), ender.getAttribute("name"));
+    }
+
+    public void getItems() {
+        NodeList itemsobj = map.getObject("Items");
+        if (itemsobj == null) return;
+        for (int i = 0; i < itemsobj.getLength(); i++) {
+            Element item = (Element) itemsobj.item(i);
+            if (item.getAttribute("name").equals("health")) {
+                blocks.add(new Health(player, convertElementToRectangle(item)));
+            }
+        }
+    }
+
+    public void getRocks() {
+        NodeList rocksobj = map.getObject("Boulder Spawn");
+        if (rocksobj == null) return;
+        for (int i = 0; i < rocksobj.getLength(); i++) {
+            Element rock = (Element) rocksobj.item(i);
+            SlidingRock r = new SlidingRock(this.player, convertElementToRectangle(rock));
+            blocks.add(r);
+            r.setBlocks(blocks);
+        }
+    }
+
+    public void getProps() {
+        NodeList props = map.getTags("properties");
+        if (props == null) return;
+
+        for (int i =0; i < props.getLength(); i++) {
+            Element e = (Element) props.item(i);
+            NodeList propList = e.getElementsByTagName("property");
+            for (int j = 0; j < propList.getLength(); j++) {
+                Element prop = (Element) propList.item(j);
+                if (prop.getAttribute("name").equals("Music")) {
+                    soundManager.addSound("music", prop.getAttribute("value"));
+                    soundManager.playSound("music", true);
+                }
+                if (prop.getAttribute("name").equals("tut")) {
+                    hastut = true;
+                    tut = prop.getAttribute("value");
+                }
+            }
+        }
     }
 
     private Rectangle convertElementToRectangle(Element toRectangle) {

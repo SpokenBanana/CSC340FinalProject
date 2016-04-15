@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="32" tileheight="32">
  <properties>
-  <property name="Music" value=""/>
+  <property name="Music" value="starbrain.wav"/>
+  <property name="tut" value="Okay so this is a different kind of level`You have to navigate your way through it, but as you step, you may enter into battle`It's random, so with each step there's a chance you'll be teleported to a battle arena`Kill all enemies to get out of it`Don't die! There are hearts you can touch to heal you"/>
  </properties>
  <tileset firstgid="1" name="PathAndObjects" tilewidth="32" tileheight="32">
   <image source="../../Downloads/PathAndObjects.png" width="512" height="512"/>
@@ -1026,7 +1027,7 @@
     <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
    </properties>
   </object>
-  <object name="walls" x="57.67" y="721.333" width="15" height="80">
+  <object name="walls" x="57.67" y="729.33" width="15" height="80">
    <properties>
     <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
    </properties>
@@ -1051,12 +1052,12 @@
     <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
    </properties>
   </object>
-  <object name="walls" x="4" y="310" width="76" height="20">
+  <object name="walls" x="4" y="310" width="67" height="20">
    <properties>
     <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
    </properties>
   </object>
-  <object name="walls" x="122" y="306.667" width="264" height="27.33">
+  <object name="walls" x="122" y="311.67" width="264" height="16.33">
    <properties>
     <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
    </properties>
@@ -1366,5 +1367,13 @@
     <property name="Music" value="Wacky Wheels music - Overdrive (AdLib).mp3"/>
    </properties>
   </object>
+ </objectgroup>
+ <objectgroup name="Items">
+  <object name="health" x="144" y="479" width="32" height="32"/>
+  <object name="health" x="436" y="460" width="32" height="32"/>
+  <object name="health" x="655" y="150" width="32" height="32"/>
+  <object name="health" x="208" y="80" width="32" height="32"/>
+  <object name="health" x="718" y="672" width="32" height="32"/>
+  <object name="health" x="1140" y="437" width="32" height="32"/>
  </objectgroup>
 </map>

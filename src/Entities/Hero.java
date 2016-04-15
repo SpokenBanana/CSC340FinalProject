@@ -12,9 +12,11 @@ import java.util.ArrayList;
 
 public class Hero extends Entity {
     public ArrayList<Bullet> bullets;
+    public HeroHUD hud;
     public boolean isSliding;
 
     public Hero() {
+        hud = new HeroHUD();
         isSliding = false;
         position = new Rectangle(0,0,32,32);
         moveTo(32,32);
@@ -69,7 +71,8 @@ public class Hero extends Entity {
                     return true;
                 }
             }
-            return false;
+
+            return b.distance <=0;
         });
     }
 
@@ -78,6 +81,7 @@ public class Hero extends Entity {
         for (Bullet bullet : bullets) {
             bullet.draw(g);
         }
+        hud.draw(g, this);
     }
 
     public Point shootInDirection(Direction dir) {

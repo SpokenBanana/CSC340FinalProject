@@ -17,8 +17,11 @@ public class SomeLevel extends MapState {
     public SomeLevel(GameStateManager manger) {
         super(manger, "intro");
         player = new Wizard();
+        sound.addSound("main", "126428__cabeeno-rossley__toss-throw.wav");
         sound.playSound("main");
         getSpawn();
+        getRocks();
+        getItems();
         spawnEnemies();
     }
     public void update(){

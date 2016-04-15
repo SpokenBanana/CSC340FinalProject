@@ -109,6 +109,10 @@ public class Map {
         return null;
     }
 
+    public NodeList getTags(String tag) {
+        return mapData.getElementsByTagName(tag);
+    }
+
     public void getTileSets() {
         tileSets = new ArrayList<>();
         NodeList objects = mapData.getElementsByTagName("tileset");

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Music" value="cavern.wav"/>
+  <property name="tut" value="Okay so this is the game!`Move using WASD, shoot fireballs with F (awesome I know), the fireballs move towards you mouse cursor!`You can always pause by pressing ENTER`Go to the right edge of the screen to advance`Remember, you can't go back once you advance! Good luck! Don't die!"/>
+ </properties>
  <tileset firstgid="1" name="terrain" tilewidth="32" tileheight="32">
   <image source="terrain.png" width="672" height="736"/>
  </tileset>

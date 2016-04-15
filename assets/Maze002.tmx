@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Musc" value="flight.wav"/>
+  <property name="tut" value="Same deal here as the last level`Only this is the last level, so make it through and you beat the game`PS. There was no cake"/>
+ </properties>
  <tileset firstgid="1" name="ground_tiles" tilewidth="32" tileheight="32">
   <image source="../../Downloads/ground_tiles.png" width="672" height="701"/>
  </tileset>
@@ -1015,7 +1019,7 @@
   <object name="Walls" x="1269.33" y="49.3333" width="37.3333" height="749.333"/>
   <object name="Walls" x="1204" y="0" width="22.67" height="288"/>
   <object name="Walls" x="1144" y="261.333" width="68" height="24"/>
-  <object name="Walls" x="982.667" y="44" width="184" height="216"/>
+  <object name="Walls" x="982.667" y="44" width="176" height="216"/>
   <object name="Walls" x="989.333" y="256" width="78.6667" height="33.3333"/>
   <object name="Walls" x="980" y="260" width="22.33" height="284"/>
   <object name="Walls" x="1046.67" y="336" width="177.333" height="206.667"/>
@@ -1073,6 +1077,14 @@
   <object name="Player Spawn" x="16" y="0" width="34.6667" height="30.6667"/>
  </objectgroup>
  <objectgroup name="End of Level">
-  <object name="End of Level" x="1266.67" y="-6.66667" width="46.6667" height="54.6667"/>
+  <object name="End" x="1266.67" y="-6.66667" width="46.6667" height="54.6667"/>
+ </objectgroup>
+ <objectgroup name="Items">
+  <object name="health" x="128" y="128" width="32" height="32"/>
+  <object name="health" x="320" y="384" width="32" height="32"/>
+  <object name="health" x="576" y="512" width="32" height="32"/>
+  <object name="health" x="1211" y="544" width="32" height="32"/>
+  <object name="health" x="81" y="585" width="32" height="32"/>
+  <object name="health" x="1170" y="224" width="32" height="32"/>
  </objectgroup>
 </map>

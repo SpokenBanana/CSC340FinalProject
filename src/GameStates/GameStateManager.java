@@ -31,6 +31,13 @@ public class GameStateManager {
         game.enter();
         gameStates.push(game);
     }
+    public void clear() {
+        while (!gameStates.empty()) {
+            gameStates.peek().leave();
+            gameStates.pop();
+        }
+    }
+
     /**
         In contrast to the addGame(), this will completely throw away the previous screen and set the
         passed in game as the current screen.

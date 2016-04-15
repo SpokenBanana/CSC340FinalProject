@@ -190,7 +190,7 @@ public abstract class Entity implements MapEntity{
             case Down:
                 return new Rectangle(position.x, position.y + position.height, position.width, 5);
             case Up:
-                return new Rectangle(position.x, position.y - 5, position.width, 5);
+                return new Rectangle(position.x, position.y - 10, position.width, 10);
             case Left:
                 return new Rectangle(position.x - 5, position.y, 5, position.height);
             case Right:
@@ -248,7 +248,7 @@ public abstract class Entity implements MapEntity{
     }
 
     public boolean collisionCondition(MapEntity block, Rectangle newPosition) {
-        return block != this && block.getPosition().intersects(newPosition);
+        return !block.ignore() && block != this && block.getPosition().intersects(newPosition);
     }
 
     public double distance(Rectangle other) {
@@ -288,6 +288,9 @@ public abstract class Entity implements MapEntity{
         if (soFarCompleted <= 0)
             return old;
         return old + soFarCompleted * (target - old);
+    }
+    public boolean ignore() {
+        return false;
     }
     /**
         This uses lerp() to smoothly move the player from tile to tile. The velocity gives us the amount of time it will

@@ -60,8 +60,9 @@ public class SoundManager {
     public void playSound(String key, boolean loop) {
         if (sounds.containsKey(key)) {
             stopSound(key);
-            if (loop)
+            if (loop){
                 sounds.get(key).loop();
+            }
             else
                 sounds.get(key).play();
         }

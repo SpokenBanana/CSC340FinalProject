@@ -9,12 +9,12 @@ import java.awt.*;
 
 public class SlidingRock extends Entity {
     public Hero player;
-    public SlidingRock(Hero hero) {
+    public SlidingRock(Hero hero, Rectangle position) {
         super();
         player = hero;
-        position = new Rectangle(0,0, 32,32);
-        moveTo(96,32 * 5);
-        sprites.addSprite("main", "CherryTree001.png");
+        this.position = position;
+        moveTo(position.x, position.y);
+        sprites.addSprite("main", "rock.png");
         sprites.setCurrent("main");
     }
 
