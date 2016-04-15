@@ -4,7 +4,6 @@ import AssetManagers.Animation;
 import Bullets.Bullet;
 import Entities.Enemies.Enemy;
 import Handlers.Game;
-import com.oracle.deploy.update.UpdateCheck;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;

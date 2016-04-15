@@ -1,8 +1,6 @@
 package Entities;
 
 import AssetManagers.SpriteManager;
-import com.sun.org.glassfish.gmbal.ManagedObject;
-import javafx.beans.property.ReadOnlyBooleanWrapper;
 
 import java.awt.*;
 import java.util.ArrayList;
