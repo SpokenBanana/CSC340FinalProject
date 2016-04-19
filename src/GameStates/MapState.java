@@ -111,11 +111,13 @@ public class MapState extends GameState {
         }
         if (this.player.getHealth() <= 0) {
             parentManager.clear();
+            soundManager.clearAllSounds();
             parentManager.setGame(new TitleScreen(parentManager));
         }
         slide[0] = false;
         slidingRegions.forEach(s -> {
             if (player.getPosition().intersects(s)){
+                player.setDirection(player.getFacingDirection());
                 player.isSliding = true;
                 slide[0] = true;
             }

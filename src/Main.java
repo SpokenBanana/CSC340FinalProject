@@ -1,3 +1,4 @@
+import GameStates.Menus.TitleScreen;
 import GameStates.TestStates.Init;
 import Handlers.Game;
 
@@ -10,7 +11,7 @@ public class Main {
         Game game = new Game();
 
         // START LEVEL
-        game.gameStateManager.addGame(new Init(game.gameStateManager));
+        game.gameStateManager.addGame(new TitleScreen(game.gameStateManager));
 
         frame.add(game);
         frame.pack();
