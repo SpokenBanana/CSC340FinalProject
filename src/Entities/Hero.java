@@ -13,9 +13,11 @@ public class Hero extends Entity {
     public ArrayList<Bullet> bullets;
     public HeroHUD hud;
     public boolean isSliding;
+    public String description;
+    public String name;
 
     public Hero() {
-        hud = new HeroHUD();
+        hud = new HeroHUD(this);
         isSliding = false;
         position = new Rectangle(0,0,32,32);
         moveTo(32,32);

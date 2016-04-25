@@ -14,12 +14,13 @@ public class Wizard extends Hero {
     SoundManager soundManager;
     public Wizard() {
         super();
-        length = 0;
+        this.name = "Wizard";
         soundManager = new SoundManager();
-        soundManager.addSound("shoot", "126423__cabeeno-rossley__shoot-laser.wav");
+        this.description = "Health: 100, Damage: 30. Can shoot fireballs (With F button)";
+        length = 0;
         duration = 15;
-        this.damage = 50;
-        this.velocity = 10 ;
+        this.damage = 30;
+        this.velocity = 10;
         setDirection(Direction.Right);
     }
 

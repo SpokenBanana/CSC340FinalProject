@@ -10,14 +10,14 @@ public class HeroHUD {
     protected BufferedImage blank;
     protected int startHealth;
 
-    public HeroHUD(){
+    public HeroHUD(Hero hero){
         try {
             healthBar = ImageIO.read(new File("assets/healthbar.png"));
             blank = ImageIO.read(new File("assets/blank.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
-        startHealth = 100;
+        startHealth = hero.health;
     }
 
     public void draw(Graphics2D g, Hero player) {

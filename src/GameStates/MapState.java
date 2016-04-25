@@ -38,7 +38,6 @@ public class MapState extends GameState {
 
     public MapState(GameStateManager manger, String level, Hero player) {
         super(manger);
-
         hastut = false;
         this.player = player;
         blocks = new ArrayList<>();

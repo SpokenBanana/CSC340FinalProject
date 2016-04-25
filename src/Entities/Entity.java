@@ -17,7 +17,7 @@ public abstract class Entity implements MapEntity{
     protected final int MOVE_DISTANCE = 16;
     protected Rectangle position;
     protected Point oldPosition, targetPosition;
-    protected int velocity, health;
+    protected int velocity, health, startHealth;
     protected int hurtTime = 0;
     protected boolean colliding;
 
@@ -54,7 +54,7 @@ public abstract class Entity implements MapEntity{
         position = new Rectangle();
         oldPosition = new Point();
         velocity = 10;
-        health = 100;
+        health = startHealth = 100;
         colliding = false;
         targetPosition = new Point();
     }
@@ -115,8 +115,8 @@ public abstract class Entity implements MapEntity{
      */
     public void recover(int amount) {
         health += amount;
-        if (health > 100)
-            health = 100;
+        if (health > startHealth)
+            health = startHealth;
     }
 
     /**

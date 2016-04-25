@@ -3,6 +3,7 @@ package GameStates.TestStates;
 import AssetManagers.Sound;
 import Entities.Hero;
 import Entities.Heroes.Wizard;
+import Entities.Heroes.paladin;
 import GameStates.GameStateManager;
 import GameStates.MapState;
 import Handlers.GameLauncher;
@@ -16,7 +17,18 @@ public class SomeLevel extends MapState {
     }
     public SomeLevel(GameStateManager manger) {
         super(manger, "intro");
-        player = new Wizard();
+        player = new paladin();
+        sound.addSound("main", "126428__cabeeno-rossley__toss-throw.wav");
+        sound.playSound("main");
+        getSpawn();
+        getRocks();
+        getItems();
+        spawnEnemies();
+    }
+
+    public SomeLevel(GameStateManager manager, Hero hero) {
+        super(manager, "intro");
+        player = hero;
         sound.addSound("main", "126428__cabeeno-rossley__toss-throw.wav");
         sound.playSound("main");
         getSpawn();

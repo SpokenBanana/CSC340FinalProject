@@ -35,12 +35,13 @@ public class TitleScreen extends GameState {
     @Override
     public void update() {
         if (Game.mouseInput.didMouseClickOn(play)) {
-            SomeLevel level = new SomeLevel(parentManager);
-            parentManager.setGame(level);
-            if (level.hastut) {
-                parentManager.addGame(new SpeechState(parentManager, level, level.tut));
-                level.hastut = false;
-            }
+             parentManager.setGame(new CharacterSelection(parentManager));
+//            SomeLevel level = new SomeLevel(parentManager);
+//            parentManager.setGame(level);
+//            if (level.hastut) {
+//                parentManager.addGame(new SpeechState(parentManager, level, level.tut));
+//                level.hastut = false;
+//            }
         }
     }
 
