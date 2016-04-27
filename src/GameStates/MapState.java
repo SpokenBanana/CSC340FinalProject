@@ -109,8 +109,11 @@ public class MapState extends GameState {
             return;
         }
         if (this.player.getHealth() <= 0) {
-            parentManager.clear();
             soundManager.clearAllSounds();
+            while (!parentManager.gameStates.empty()) {
+                ((MapState)parentManager.gameStates.peek()).soundManager.clearAllSounds();
+                parentManager.deleteCurrentGame();
+            }
             parentManager.setGame(new TitleScreen(parentManager));
         }
         slide[0] = false;
