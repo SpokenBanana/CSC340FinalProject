@@ -1077,7 +1077,7 @@
   <object name="Player Spawn" x="16" y="0" width="34.6667" height="30.6667"/>
  </objectgroup>
  <objectgroup name="End of Level">
-  <object name="End" x="1266.67" y="-6.66667" width="46.6667" height="54.6667"/>
+  <object name="BoulderMaze001" x="1266.67" y="-6.66667" width="46.6667" height="54.6667"/>
  </objectgroup>
  <objectgroup name="Items">
   <object name="health" x="128" y="128" width="32" height="32"/>

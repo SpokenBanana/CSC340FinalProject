@@ -18,8 +18,6 @@ public class SomeLevel extends MapState {
     public SomeLevel(GameStateManager manger) {
         super(manger, "intro");
         player = new paladin();
-        sound.addSound("main", "126428__cabeeno-rossley__toss-throw.wav");
-        sound.playSound("main");
         getSpawn();
         getRocks();
         getItems();
@@ -29,8 +27,6 @@ public class SomeLevel extends MapState {
     public SomeLevel(GameStateManager manager, Hero hero) {
         super(manager, "intro");
         player = hero;
-        sound.addSound("main", "126428__cabeeno-rossley__toss-throw.wav");
-        sound.playSound("main");
         getSpawn();
         getRocks();
         getItems();
