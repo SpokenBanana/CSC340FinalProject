@@ -7154,6 +7154,6 @@
   <object name="Boulder Spawn" x="928" y="352" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="End of Level">
-  <object name="End" x="1120" y="67" width="63" height="12"/>
+  <object name="Maze001" x="1120" y="67" width="63" height="12"/>
  </objectgroup>
 </map>

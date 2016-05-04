@@ -94,6 +94,7 @@ public class MapState extends GameState {
         getSliding();
         spawnEnemies();
         getProps();
+        getRocks();
         getEnd();
         getItems();
         if (hastut) {

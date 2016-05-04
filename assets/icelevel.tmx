@@ -2,7 +2,7 @@
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="25" tilewidth="32" tileheight="32">
  <properties>
   <property name="music" value="overdrive.wav"/>
-  <property name="tut" value="Haha! Not so easy now!`The blue tiles are slippery, you'll slide across it`Try to solve the puzzle, and then get through the enemies to go to the next stage`Good luck! There's cake at the end"/>
+  <property name="tut" value="Haha! Not so easy now!`The blue tiles are slippery, you'll slide across it`Try to solve the puzzle, and then get through the enemies to go to the next stage`Good luck! "/>
  </properties>
  <tileset firstgid="1" name="terrain" tilewidth="32" tileheight="32">
   <image source="terrain.png" width="672" height="736"/>
@@ -3068,7 +3068,7 @@
   <object x="32" y="320" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="End of Level">
-  <object name="Maze001" x="1280" y="320" width="32" height="96"/>
+  <object name="BoulderMaze001" x="1280" y="320" width="32" height="96"/>
  </objectgroup>
  <objectgroup name="Items">
   <object name="health" x="320" y="448" width="32" height="32"/>
